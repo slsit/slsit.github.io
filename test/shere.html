@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQCloud Example</title>
+        <link rel="stylesheet" type="text/css" href="http://cyberapp.ru/examples/post=380/jqcloud/jqcloud.css"/>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+        <script type="text/javascript" src="http://cyberapp.ru/examples/post=380/jqcloud/jqcloud-1.0.0.js"></script>
+        <script type="text/javascript">
+            // создание массива тегов
+            var word_list = [
+                {text:"Java EE", weight:13},
+                {text:"JavaScript", weight:10},
+                {text:"C++", weight:14},
+                {text:"C", weight:10},
+                {text:"TypeScript", weight:7},
+                {text:"CSS", weight:8},
+                {text:"HTML", weight:7},
+                {text:"Delphi", weight:12},
+                {text:"C#", weight:10},
+				{text:"Java SE", weight:12},
+				{text:"OLAP", weight:10},
+				{text:"MySQL", weight:5},
+				{text:"Oracle", weight:10},
+				{text:"ASP NET", weight:7},
+				{text:"Frameworks", weight:12},
+				{text:"Full stack", weight:9}
+            ];
+            $(function () {
+                $("#example").jQCloud(word_list, {
+  shape: 'rectangular'
+});
+            });
+        </script>
+    </head>
+    <body>
+        <h1>jQCloud Example</h1>
+        <div id="example" style="width: 950px; height: 500px;"></div>
+    </body>
+</html>
