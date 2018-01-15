@@ -5,10 +5,14 @@
   <title>SLS IT</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" media="screen" href="particles_framework/libs/css/style.css">
+
   <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
     <link href="img/icon.png" rel="shortcut icon" type="image/x-icon" />
@@ -31,15 +35,23 @@
   </div>
 </nav>
 
-<div id="slsCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
+<div style="position: absolute; top: 16%; margin-left: 5%; color: white; opacity: 0.7">
+  <h1 style="font-weight: 800">Разработка качественного<br>программного обеспечения</h1>
+</div>
+
+<div style="height: 50%">
+  <div id="particles-js"></div>
+</div>
+
+<!--<div id="slsCarousel" class="carousel slide" data-ride="carousel">
+
     <ol class="carousel-indicators">
       <li data-target="#slsCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#slsCarousel" data-slide-to="1"></li>
       <li data-target="#slsCarousel" data-slide-to="2"></li>
     </ol>
 
-    <!-- Wrapper for slides -->
+
     <div class="carousel-inner" role="listbox">
       <div class="item active">
         <img src="img/1.png" alt="SLS-1">
@@ -66,7 +78,7 @@
       </div>
     </div>
 
-    <!-- Left and right controls -->
+
     <a class="left carousel-control" href="#slsCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
@@ -75,7 +87,7 @@
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-</div>
+</div>-->
 
 <!-- About -->
 <div id="about" class="container-fluid">
@@ -84,10 +96,10 @@
       <h2>О компании</h2>
 	  
       <h4 style="margin:0px">Только качество</h4>
-      <p style="margin:0px">Наша цель – разработка качественного продукта, отвечающего всем требованиям заказчика. Перед разработкой мы всегда проводим глубокий анализ процессов, подлежащих автоматизации, учитываем все желания клиента и находим наиболее выгодный и оптимальный способ их реализации.</p>
+      <p style="margin:0px">Наша цель – разработка качественного продукта, отвечающего всем требованиям заказчика. Перед разработкой мы всегда проводим глубокий анализ процессов, подлежащих автоматизации, максимально учитываем желания клиента и находим наиболее оптимальный способ реализации.</p>
 	  <br>
 	  <h4 style="margin:0px">Для каждой задачи – свой инструмент</h4>
-      <p style="margin:0px">Мы считаем, что подстраивать задачу под определенный набор инструментов - плохая идея. Для кааждый конкретной задачи мы подбираем свой, наиболее подходящий инструмент, а стек технологий, которым владеет команда, позволяет это сделать.</p>
+      <p style="margin:0px">Мы считаем, что подстраивать задачу под определенный набор инструментов - плохая идея. Для каждой конкретной задачи мы подбираем свой, наиболее подходящий инструмент, а стек технологий, которым владеет команда, позволяет это сделать.</p>
 	  <br>
 	  <h4 style="margin:0px">Мы влюблены в то, что делаем!</h4>
       <p style="margin:0px">Наша команда – это не только команда профессионалов своего дела, достаточно долгое время проработавших в сфере IT. Это люди, который действительно любят то, чем, занимаются. Каждый из нас в совершенстве владеет своим набором инструментов, но при этом не устаёт развиваться и познавать новое.</p>
@@ -213,7 +225,7 @@
   </div>
 </div>
 
-<div id="googleMap" style="height:400px;width:100%;"></div>
+<!--<div id="googleMap" style="height:400px;width:100%;"></div>-->
 
 <!-- Add Google Maps -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN7o3pY_tWjwpiMgqgug7hm-mPJLH_oG8" type="text/javascript"></script>
@@ -283,6 +295,9 @@ $(document).ready(function(){
   });
 })
 </script>
+
+<script src="particles_framework/particles.js"></script>
+<script src="particles_framework/libs/js/app.js"></script>
 
 </body>
 </html>
